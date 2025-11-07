@@ -1,0 +1,8 @@
+stage('Deploy to Prod Server') {
+    steps {
+        sh '''
+        echo "Deploying to Production..."
+        rsync -avz --delete ./ user@prod_server_ip:/var/www/prod_app/
+        '''
+    }
+}
