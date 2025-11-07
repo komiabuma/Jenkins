@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'test', url: 'hhttps://github.com/komiabuma/Jenkins.git'
+                git branch: 'test', url: 'https://github.com/komiabuma/Jenkins.git'
             }
         }
 
