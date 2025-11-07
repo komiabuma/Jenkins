@@ -4,7 +4,7 @@ vpipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'test', url: 'https://github.com/kevbuma/Jenkins.git'
+                git branch: 'test', url: 'https://github.com/komiabuma/Jenkins'
             }
         }
 
