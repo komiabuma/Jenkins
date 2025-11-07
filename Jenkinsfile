@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                 echo "Deploying to Test Server..."
-                rsync -avz --delete ./ user@test_server_ip:/var/www/test_app/
+                rsync -avz --delete ./ ubuntu@18.222.214.160:/var/www/test_app/
                 '''
             }
         }
