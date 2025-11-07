@@ -1,10 +1,10 @@
-pipeline {
+vpipeline {
     agent { label 'test' }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'test', url: 'https://github.com/yourusername/yourrepo.git'
+                git branch: 'test', url: 'https://github.com/kevbuma/Jenkins.git'
             }
         }
 
