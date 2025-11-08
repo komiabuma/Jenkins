@@ -2,7 +2,7 @@ stage('Deploy to Prod Server') {
     steps {
         sh '''
         echo "Deploying to Production..."
-        rsync -avz --delete ./ user@prod_server_ip:/var/www/prod_app/
+        rsync -avz --delete ./ user@3.12.111.192:/var/www/prod_app/
         '''
     }
 }
